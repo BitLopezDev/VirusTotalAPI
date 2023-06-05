@@ -9,7 +9,7 @@ export default function Home() {
     url: "",
   });
   const [formValue, updateformValue]: any = React.useState(initialformValue);
-  const [resultado, setResultado] = React.useState(null);
+  const [resultado, setResultado] = React.useState<string | null>(null);
 
   const handleChange = (event: any) => {
     updateformValue({
